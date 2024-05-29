@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.google.com/specimen/Manrope?query=manrope" rel="stylesheet">
+    <link href="prak1.css" rel="stylesheet">
+</head>
+<body>
+  <div>
+    <button onclick="myFunction1()">Задание 1</button>
+    <p>
+      function myFunction1() {
+        let zodiacSign = prompt("введите ваш знак зодиака:");
+        switch(zodiacSign) {
+        case "Овен":
+        alert("Привет, Овен!");
+        break;
+        case "Телец":
+        alert("Привет, Телец!");
+        break;
+        default:
+        alert("Привет!");
+        break;
+        case "Близнецы":
+        alert("Привет, Близнецы!");
+        break;
+        case "Рак":
+        alert("Привет, Рак!");
+        break;
+        case "Лев":
+        alert("Привет, Лев!");
+        break;
+        case "Дева":
+        alert("Привет, Дева!");
+        break;
+        case "Весы":
+        alert("Привет, Весы!");
+        break;
+        case "Скорпион":
+        alert("Привет, Скорпион!");
+        break;
+        case "Стрелец":
+        alert("Привет, Стрелец!");
+        break;
+        case "Козерог":
+        alert("Привет, Козерог!");
+        break;
+        case "Водолей":
+        alert("Привет, Водолей!");
+        break;
+        case "Рыбы":
+        alert("Привет, Рыбы!");
+        break;
+        }
+      }
+    </p>
+  </div>
+    <div>
+      <button onclick="myFunction2()">Задание 2</button>
+      <p>
+        function myFunction2() {
+          let num1 = prompt("откройте консоль, код там!");
+         for (let i = 1; i <= 40; i++) {
+        console.log(i);
+        }
+        
+        let j = 1;
+        while (j <= 40) {
+        console.log(j);
+        j++;
+        }
+        
+        let k = 1;
+        do {
+        console.log(k);
+        k++;
+        } while (k <= 40);
+        }
+      </p>
+    </div>
+    <div>
+      <button onclick="myFunction3()">Задание 3</button>
+      <p>
+        function myFunction3() {
+          let num1 = prompt("откройте консоль, код там!");
+              setInterval(function() {
+                  document.getElementById("message").innerHTML = "привет, я вирус"
+              }, 1000);
+        }
+      </p>
+    </div>
+    <div>
+      <button onclick="myFunction4()">Задание 4</button>
+      <p>
+        function myFunction4() {
+          let num1 = prompt("введите первое число:");
+          let num2 = prompt("введите второе число:");
+          let num3 = prompt("введите третье число:");
+          let sortedNums = [num1, num2, num3].sort((a, b) => a - b);
+          console.log(sortedNums);
+        }
+      </p>
+    </div>
+    <div>
+      <button onclick="myFunction5()">Задание 5</button>
+      <p>
+        function myFunction5() {
+          let num1 = prompt("откройте консоль, код там!");
+          for(let i = 0; i <= 15; i++) {
+        if(i % 2 === 0) {
+        console.log(i + " - четное");
+        } else {
+        console.log(i + " - нечетное");
+        }
+        }
+        }
+      </p>
+    </div>
+    <div>
+      <button onclick="myFunction6()">Задание 6</button>
+      <p>
+        function myFunction6() {
+          let userNumber;
+          do {
+          userNumber = prompt("введите число больше 5:");
+          }
+          while (userNumber <= 5);
+          alert("поздравляем!");
+        }
+      </p>
+    </div>
+    <div>
+      <button onclick="myFunction7()">Задание 7</button>
+      <p>
+        function myFunction7() {
+          let num1 = prompt("откройте консоль, код там!");
+          for(let i = 8; i <= 20; i += 2) {
+        console.log(i);
+        }
+        }
+      </p>
+    </div>
+    <div>
+      <button onclick="myFunction8()">Задание 8</button>
+      <p>
+        function myFunction8() {
+          let num1 = prompt("откройте консоль, код там!");
+          let sum = 0;
+          for(let i = 0; i <= 1000; i++) {
+          if(i % 3 === 0 || i % 5 === 0) {
+          sum += i;
+          }
+          }
+          console.log(sum);
+        }
+      </p>
+    </div>
+    <div>
+      <button onclick="myFunction8()">Задание 9</button>
+      <p>
+        function myFunction9() {
+          let num1 = prompt("откройте консоль, код там!");
+          let number = 371;
+          let strNumber = number.toString();
+          let sum1 = 0;
+          for(let digit of strNumber) {
+          sum1 += parseInt(digit) ** 3;
+          }
+          if(sum1 === number) {
+          console.log(number + " это число армстронга");
+          } else {
+          console.log(number + " это не число армстронга");
+          }
+        }
+      </p>
+    </div>
+    <div>
+      <button onclick="myFunction8()">Задание 10</button>
+      <p>
+        function myFunction10() {
+          let num1 = prompt("откройте консоль, код там!");
+          let str = "";
+          for(let i = 1; i <= 5; i++) {
+          str += '* ';
+          console.log(str);
+          }
+        }
+      </p>
+    </div>
+    
+    
+    <script>
+      function myFunction1() {
+        let zodiacSign = prompt("введите ваш знак зодиака:");
+        switch(zodiacSign) {
+        case "Овен":
+        alert("Привет, Овен!");
+        break;
+        case "Телец":
+        alert("Привет, Телец!");
+        break;
+        default:
+        alert("Привет!");
+        break;
+        case "Близнецы":
+        alert("Привет, Близнецы!");
+        break;
+        case "Рак":
+        alert("Привет, Рак!");
+        break;
+        case "Лев":
+        alert("Привет, Лев!");
+        break;
+        case "Дева":
+        alert("Привет, Дева!");
+        break;
+        case "Весы":
+        alert("Привет, Весы!");
+        break;
+        case "Скорпион":
+        alert("Привет, Скорпион!");
+        break;
+        case "Стрелец":
+        alert("Привет, Стрелец!");
+        break;
+        case "Козерог":
+        alert("Привет, Козерог!");
+        break;
+        case "Водолей":
+        alert("Привет, Водолей!");
+        break;
+        case "Рыбы":
+        alert("Привет, Рыбы!");
+        break;
+        }
+      }
+    
+      function myFunction2() {
+        let num1 = prompt("откройте консоль, код там!");
+       for (let i = 1; i <= 40; i++) {
+      console.log(i);
+      }
+      
+      let j = 1;
+      while (j <= 40) {
+      console.log(j);
+      j++;
+      }
+      
+      let k = 1;
+      do {
+      console.log(k);
+      k++;
+      } while (k <= 40);
+      }
+    
+      function myFunction3() {
+        let num1 = prompt("откройте консоль, код там!");
+            setInterval(function() {
+                document.getElementById("message").innerHTML = "привет, я вирус"
+            }, 1000);
+      }
+
+      function myFunction4() {
+        let num1 = prompt("введите первое число:");
+        let num2 = prompt("введите второе число:");
+        let num3 = prompt("введите третье число:");
+        let sortedNums = [num1, num2, num3].sort((a, b) => a - b);
+        console.log(sortedNums);
+      }
+
+      function myFunction5() {
+        let num1 = prompt("откройте консоль, код там!");
+        for(let i = 0; i <= 15; i++) {
+      if(i % 2 === 0) {
+      console.log(i + " - четное");
+      } else {
+      console.log(i + " - нечетное");
+      }
+      }
+      }
+      
+      function myFunction6() {
+        let userNumber;
+        do {
+        userNumber = prompt("введите число больше 5:");
+        }
+        while (userNumber <= 5);
+        alert("поздравляем!");
+      }
+      
+      function myFunction7() {
+        let num1 = prompt("откройте консоль, код там!");
+        for(let i = 8; i <= 20; i += 2) {
+      console.log(i);
+      }
+      }
+      
+      function myFunction8() {
+        let num1 = prompt("откройте консоль, код там!");
+        let sum = 0;
+        for(let i = 0; i <= 1000; i++) {
+        if(i % 3 === 0 || i % 5 === 0) {
+        sum += i;
+        }
+        }
+        console.log(sum);
+      }
+      
+      function myFunction9() {
+        let num1 = prompt("откройте консоль, код там!");
+        let number = 371;
+        let strNumber = number.toString();
+        let sum1 = 0;
+        for(let digit of strNumber) {
+        sum1 += parseInt(digit) ** 3;
+        }
+        if(sum1 === number) {
+        console.log(number + " это число армстронга");
+        } else {
+        console.log(number + " это не число армстронга");
+        }
+      }
+      
+      function myFunction10() {
+        let num1 = prompt("откройте консоль, код там!");
+        let str = "";
+        for(let i = 1; i <= 5; i++) {
+        str += '* ';
+        console.log(str);
+        }
+      }
+    </script>
+
+
+    <!--
+  //задание 1
+  let zodiacSign = prompt("введите ваш знак зодиака:");
+        switch(zodiacSign) {
+        case "Овен":
+        alert("Привет, Овен!");
+        break;
+        case "Телец":
+        alert("Привет, Телец!");
+        break;
+        default:
+        alert("Привет!");
+        break;
+        case "Близнецы":
+        alert("Привет, Близнецы!");
+        break;
+        case "Рак":
+        alert("Привет, Рак!");
+        break;
+        case "Лев":
+        alert("Привет, Лев!");
+        break;
+        case "Дева":
+        alert("Привет, Дева!");
+        break;
+        case "Весы":
+        alert("Привет, Весы!");
+        break;
+        case "Скорпион":
+        alert("Привет, Скорпион!");
+        break;
+        case "Стрелец":
+        alert("Привет, Стрелец!");
+        break;
+        case "Козерог":
+        alert("Привет, Козерог!");
+        break;
+        case "Водолей":
+        alert("Привет, Водолей!");
+        break;
+        case "Рыбы":
+        alert("Привет, Рыбы!");
+        break;
+        }
+      }
+    //задание 2
+      function myFunction2() {
+       for (let i = 1; i <= 40; i++) {
+      console.log(i);
+      }
+      
+      let j = 1;
+      while (j <= 40) {
+      console.log(j);
+      j++;
+      }
+      
+      let k = 1;
+      do {
+      console.log(k);
+      k++;
+      } while (k <= 40);
+      }
+
+  //задание 3
+  <script>
+      setInterval(function() {
+          document.getElementById("message").innerHTML = "привет, я вирус"
+      }, 1000);
+  </script>
+  
+  //задание 4
+  let num1 = prompt("введите первое число:");
+  let num2 = prompt("введите второе число:");
+  let num3 = prompt("введите третье число:");
+  let sortedNums = [num1, num2, num3].sort((a, b) => a - b);
+  console.log(sortedNums);
+  
+  //задание 5
+  for(let i = 0; i <= 15; i++) {
+      if(i % 2 === 0) {
+      console.log(i + " - четное");
+      } else {
+      console.log(i + " - нечетное");
+      }
+      }
+  
+  //задание 6
+  let userNumber;
+  do {
+  userNumber = prompt("введите число больше 5:");
+  }
+  while (userNumber <= 5);
+  alert("поздравляем!");
+  
+  //задание 7
+  for(let i = 8; i <= 20; i += 2) {
+      console.log(i);
+      }
+  
+  //задание 8
+  let sum = 0;
+  for(let i = 0; i <= 1000; i++) {
+  if(i % 3 === 0 || i % 5 === 0) {
+  sum += i;
+  }
+  }
+  console.log(sum);
+  
+  //задание 9
+  let number = 371;
+  let strNumber = number.toString();
+  let sum1 = 0;
+  for(let digit of strNumber) {
+  sum1 += parseInt(digit) ** 3;
+  }
+  if(sum1 === number) {
+  console.log(number + " это число армстронга");
+  } else {
+  console.log(number + " это не число армстронга");
+  }
+  
+  //задание 10
+  let str = "";
+  for(let i = 1; i <= 5; i++) {
+  str += '* ';
+  console.log(str);
+  } -->
+</body>
+</html>

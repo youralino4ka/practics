@@ -1,0 +1,18 @@
+div{
+  white-space: pre;
+}
+body{
+  background-color: rgb(250, 198, 247);
+  font-family: "Manrope";
+}
+button{
+  width:200px ;
+  height: 50px;
+  border-radius: 30px;
+  border-style: none;
+}
+a{
+  text-decoration: none;
+  font-family: "Manrope";
+  font-size: 15px;
+}

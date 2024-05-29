@@ -1,0 +1,160 @@
+
+
+.text_form{
+    position: fixed;
+    color: #FFF;
+    font-family: "Raleway";
+
+    width: 789px;
+    height:194px;
+    margin-top: 56px;
+    margin-left: 565px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+
+
+
+html, body, section {
+	block-size: 100%;
+  }
+  
+  html {
+	scroll-snap-type: y mandatory;
+  }
+  
+  section {
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  body {
+	margin: 0;
+	font-family: "Raleway";
+	background-color: #7da0ca;
+    color: #c1e8ff;
+  }
+
+  .back1{
+	position: absolute;
+  }
+  .one{
+	font-size: 15px;
+  }
+  .text1{
+	width: 700px;
+	height:200px;
+  }
+  #genre{
+	font-family: "Raleway";
+	font-size: 16px;
+	font-weight: bold;
+	color: rgb(65, 58, 58);
+	background-color:rgb(255, 245, 203);
+	margin-left: -370px;
+	margin-top: 150px;
+	border: 0px;
+	border-radius: 30px;
+	width: 200px;
+	height: 50px;
+  }
+  #mood{
+	font-family: "Raleway";
+	font-size: 16px;
+	font-weight: bold;
+	position: absolute;
+	margin-right: 20px;
+	margin-top: 150px;
+	color: rgb(65, 58, 58);
+	background-color:rgb(255, 245, 203);
+	border: 0px;
+	border-radius: 30px;
+	width: 200px;
+	height: 50px;
+  }
+#lenght{
+	position: absolute;
+	font-family: "Raleway";
+	font-size: 16px;
+	font-weight: bold;
+	color: rgb(65, 58, 58);
+	background-color:rgb(255, 245, 203);
+	margin-right: 20px;
+	margin-top: 150px;
+	border: 0px;
+	border-radius: 30px;
+	width: 200px;
+	height: 50px;
+	
+}
+#drama{
+	font-family: "Raleway";
+	font-size: 16px;
+	font-weight: bold;
+	position: absolute;
+	margin-right: 20px;
+	margin-top: 150px;
+	background-color:rgb(255, 245, 203);
+	color: rgb(65, 58, 58);
+	border: 0px;
+	border-radius: 30px;
+	width: 200px;
+	height: 50px;
+}
+#fan{
+	position: absolute;
+	font-family: "Raleway";
+	font-size: 16px;
+	font-weight: bold;
+	color: rgb(65, 58, 58);
+	background-color:rgb(255, 245, 203);
+	margin-right: 20px;
+	margin-top: 150px;
+	border: 0px;
+	border-radius: 30px;
+	width: 200px;
+	height: 50px;
+}
+
+
+
+body {
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.light-theme {
+    background-color: #7da0ca;
+    color: #c1e8ff;
+}
+
+.dark-theme {
+    background-color: #021024;
+    color: #052659;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.theme-switcher{
+	border-radius: 50px;
+	position: absolute;
+}
+
+button{
+	width: 200px;
+	border-radius: 37px;
+	border-style: solid;
+	border: 0PX;
+	background-color:rgb(255, 245, 203);
+	color: rgb(65, 58, 58);;
+	font-family: "raleway";
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильмы на вечер</title>
+    <link rel="stylesheet" href="list.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="scroll" href="list.js">
+</head>
+
+
+<body> 
+    <div class="theme-switcher">
+      <button onclick="switchTheme('light')">Светлая тема</button>
+      <button onclick="switchTheme('dark')">Темная тема</button>
+  </div>
+  <script src="list.js">
+  </script>
+  
+    <section class="one">
+        <h1 class="text1">Добро пожаловать в наш интерактивный опрос, специально разработанный для помощи Вам в выборе идеального аниме сериала, соответствующего Вашему текущему настроению.
+            Просто ответьте на несколько простых вопросов, и наш алгоритм предложит Вам аниме, которое точно удовлетворит Ваши эмоциональные потребности ❤</h1>
+      </section>
+      <section>
+        <h1>1. Какое настроение преобладает у вас сегодня?</h1>
+        <form id="movieForm">
+          <select id="genre">
+              <option value="action">Радость и веселье</option>
+              <option value="comedy">Грусть и раздумья</option>
+              <option value="drama">Усталось и стресс</option>
+              <option value="horror">Неуверенность и тревога</option>
+          </select>
+      </section>
+      <section class="two">
+        <h1>2. Какой жанр аниме Вам больше всего нравится?</h1>
+        <form id="movieForm">
+        <select id="mood">
+            <option value="happy">Романтика и драма</option>
+            <option value="sad">Фантастика и Фэнтези</option>
+            <option value="excited">Ужасы и мистика</option>
+            <option value="relaxed">Комедия и юмор</option>
+        </select>
+      </section>
+        <section class="three">
+        <h1>3. Какова Ваша предпочтительная длина сериалов?</h1>
+        <form id="movieForm">
+        <select id="lenght">
+            <option value="short">Короткие серии (10-15 мин)</option>
+            <option value="medium">Средние серии (20-30 мин)</option>
+            <option value="long">Длинные серии (более 30 мин)</option>
+        </select>
+      </section>
+      <section class="four">
+        <h1>4. Какой уровень насилия и драматизма вы готовы принять в аниме?</h1>
+        <form id="movieForm">
+            <select id="drama">
+                <option value="short">Минимум или вообще нет</option>
+                <option value="medium">Умеренный</option>
+                <option value="long">Высокий</option>
+            </select>
+      </section>
+      <section class="five">
+        <h1>5. Есть ли у вас предпочтения по поводу наличия фансервиса или романтики?</h1>
+        <form id="movieForm">
+            <select id="fan">
+                <option value="short">Да, мне это нравится</option>
+                <option value="medium">Нет, мне это не нравится</option>
+                <option value="long">Не имеет значения</option>
+            </select>
+      </section>
+</body>
+</html>

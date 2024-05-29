@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.google.com/specimen/Manrope?query=manrope" rel="stylesheet">
+    <link href="prak2.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <button onclick="myFunction1()">Задание 1, 2, 3, 4</button>
+        <p>
+            let student1 = {
+                name: "Иван",
+                age: 20,
+                sayName: function() {
+                  console.log(this.name);
+                },
+                calculateAge: function() {
+                  console.log(2022 - this.age);
+                }
+              };
+              
+              
+              function Student(name, age) {
+                this.name = name;
+                this.age = age;
+                this.sayName = function() {
+                  console.log(this.name);
+                };
+                this.calculateAge = function() {
+                  console.log(2022 - this.age);
+                };
+              }
+              let student2 = new Student("Петр", 22);
+              
+              
+              function InpitStudent(name, age, course) {
+                this.name = name;
+                this.age = age;
+                this.course = course;
+              }
+              
+              InpitStudent.prototype.sayName = function() {
+                console.log(this.name);
+              };
+              
+              InpitStudent.prototype.calculateAge = function() {
+                console.log(2022 - this.age);
+              };
+              
+              InpitStudent.prototype.getCourse = function() {
+                console.log("Курс: " + this.course);
+              };
+              
+              let student3 = new InpitStudent("Анна", 21, "Информатика");
+              student3.sayName();
+              student3.calculateAge();
+              student3.getCourse();
+        </p>
+    </div>
+
+    <script>
+        let student1 = {
+  name: "Иван",
+  age: 20,
+  sayName: function() {
+    console.log(this.name);
+  },
+  calculateAge: function() {
+    console.log(2022 - this.age);
+  }
+};
+
+
+function Student(name, age) {
+  this.name = name;
+  this.age = age;
+  this.sayName = function() {
+    console.log(this.name);
+  };
+  this.calculateAge = function() {
+    console.log(2022 - this.age);
+  };
+}
+let student2 = new Student("Петр", 22);
+
+
+function InpitStudent(name, age, course) {
+  this.name = name;
+  this.age = age;
+  this.course = course;
+}
+
+InpitStudent.prototype.sayName = function() {
+  console.log(this.name);
+};
+
+InpitStudent.prototype.calculateAge = function() {
+  console.log(2022 - this.age);
+};
+
+InpitStudent.prototype.getCourse = function() {
+  console.log("Курс: " + this.course);
+};
+
+let student3 = new InpitStudent("Анна", 21, "Информатика");
+student3.sayName();
+student3.calculateAge();
+student3.getCourse();
+    </script>

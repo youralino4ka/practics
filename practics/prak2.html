@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.google.com/specimen/Manrope?query=manrope" rel="stylesheet">
+    <link href="prak2.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <button onclick="myFunction1()">Задание 1</button>
+        <p>
+            function myFunction1() {
+                function Hello(userName) {
+                console.log(`привет, ${userName}!`);
+            }
+            Hello('Алина');
+            }
+        </p>
+    </div>
+    <div>
+        <button onclick="myFunction2()">Задание 2</button>
+        <p>
+            function myFunction2() {
+                document.addEventListener("click", function() {
+        let userName = prompt("введите имя:");
+        if (userName) {
+            console.log(`привет, ${userName}!`);
+        } else {
+            console.log("отменено пользователем.");
+        }
+        });
+            }
+        </p>
+    </div>
+    <div>
+        <button onclick="myFunction3()">Задание 3</button>
+        <p>
+            function myFunction3() {
+                const min = (a, b) => (a < b ? a : b);
+            console.log(min(5, 10));
+            }
+        </p>
+    </div>
+    <div>
+        <button onclick="myFunction4()">Задание 4</button>
+        <p>
+            function myFunction4() {
+                function Quadratic(a, b, c) {
+        let discriminant = b * b - 4 * a * c;
+        if (discriminant > 0) {
+            let x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+            let x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+            return [x1, x2];
+        } else if (discriminant === 0) {
+            let x = -b / (2 * a);
+            return [x];
+        } else {
+            return "Нет корней";
+        }
+    }
+        </p>
+    </div>
+    <div>
+        <button onclick="myFunction5()">Задание 5</button>
+        <p>
+            function myFunction5() {
+                function Quadratic(a, b, c) {
+        let discriminant = b * b - 4 * a * c;
+        if (discriminant > 0) {
+            let x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+            let x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+            return [x1, x2];
+        } else if (discriminant === 0) {
+            let x = -b / (2 * a);
+            return [x];
+        } else {
+            return "Нет корней";
+        }
+    }
+    
+    console.log(Quadratic(1, -3, 2));
+    
+    function QuadraticWithValidation(a, b, c) {
+        if (!a || !b || !c) {
+            return "Ошибка: пустые значения не допускаются.";
+        }
+    
+        let discriminant = b * b - 4 * a * c;
+        if (discriminant > 0) {
+            let x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+            let x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+            return [x1, x2];
+        } else if (discriminant === 0) {
+            let x = -b / (2 * a);
+            return [x];
+        } else {
+            return "Нет действительных корней";
+        }
+    }
+            }
+        </p>
+    </div>
+    
+    
+
+    <script>
+        function myFunction1() {
+            function Hello(userName) {
+            console.log(`привет, ${userName}!`);
+        }
+        Hello('Алина');
+        }
+
+        function myFunction2() {
+            document.addEventListener("click", function() {
+    let userName = prompt("введите имя:");
+    if (userName) {
+        console.log(`привет, ${userName}!`);
+    } else {
+        console.log("отменено пользователем.");
+    }
+    });
+        }
+
+        function myFunction3() {
+            const min = (a, b) => (a < b ? a : b);
+        console.log(min(5, 10));
+        }
+
+        function myFunction4() {
+            function Quadratic(a, b, c) {
+    let discriminant = b * b - 4 * a * c;
+    if (discriminant > 0) {
+        let x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+        let x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+        return [x1, x2];
+    } else if (discriminant === 0) {
+        let x = -b / (2 * a);
+        return [x];
+    } else {
+        return "Нет корней";
+    }
+}
+
+console.log(Quadratic(1, -3, 2));
+        }
+
+        function myFunction5() {
+            function Quadratic(a, b, c) {
+    let discriminant = b * b - 4 * a * c;
+    if (discriminant > 0) {
+        let x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+        let x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+        return [x1, x2];
+    } else if (discriminant === 0) {
+        let x = -b / (2 * a);
+        return [x];
+    } else {
+        return "Нет корней";
+    }
+}
+
+console.log(Quadratic(1, -3, 2));
+
+function QuadraticWithValidation(a, b, c) {
+    if (!a || !b || !c) {
+        return "Ошибка: пустые значения не допускаются.";
+    }
+
+    let discriminant = b * b - 4 * a * c;
+    if (discriminant > 0) {
+        let x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+        let x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+        return [x1, x2];
+    } else if (discriminant === 0) {
+        let x = -b / (2 * a);
+        return [x];
+    } else {
+        return "Нет действительных корней";
+    }
+}
+        }
+    </script>
+
+</body>
+</html>

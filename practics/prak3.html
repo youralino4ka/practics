@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.google.com/specimen/Manrope?query=manrope" rel="stylesheet">
+    <link href="prak3.css" rel="stylesheet">
+</head>
+<body>
+    <div class="part1">
+        <button onclick="myFunction1()">Задание 1</button>
+        <p>
+            function myFunction1() {
+            let array1 = [1, 2, 3, 4, 5];
+            let array2 = new Array(1, 2, 3, 4, 5);
+            let array3 = Array.of(1, 2, 3, 4, 5);
+            }</p>
+    </div>
+    <div class="part2">
+        <button onclick="myFunction2()">Задание 2</button>
+        <p>
+            function myFunction2() {
+                console.log(array1[4]); 
+                array1[4] = 10; 
+                console.log(array1); 
+                }
+        </p>
+    </div>
+    <div class="part3">
+        <button onclick="myFunction3()">Задание 3</button>
+        <p>
+            function myFunction3() {
+                let lengthElement = document.getElementById('lengthElement');
+                lengthElement.addEventListener('mouseover', function() {
+                  console.log('длина массива array1: ' + array1.length);
+                });
+                }
+        </p>
+    </div>
+    <div class="part4">
+        <button onclick="myFunction4()">Задание 4</button>
+        <p>
+            function myFunction4() {
+                for (let i = 0; i < array1.length; i++) {
+                    console.log(array1[i]);
+                  }
+                }
+                
+                  array1.forEach(function(element) {
+                    console.log(element);
+                  });        
+        </p>
+    </div>
+    <div class="part5">
+        <button onclick="myFunction5()">Задание 5</button>
+        <p>
+            function myFunction5() {
+                let array4 = [6, 7, 8, 9, 10];
+                let combinedArray = array1.concat(array4);
+                console.log(combinedArray);
+                  }
+        </p>
+    </div>
+    <div class="part6">
+        <button onclick="myFunction6()">Задание 6</button>
+        <p>
+            function myFunction6() {
+                let lastElement = combinedArray.pop();
+                console.log('удаленный элемент: ' + lastElement);
+                console.log(combinedArray);
+                }        
+        </p>
+    </div>
+    <div class="part7">
+        <button onclick="myFunction7()">Задание 7</button>
+        <p>
+            function myFunction7() {
+                lastElement = combinedArray.pop();
+                console.log('удаленный элемент: ' + lastElement);
+                console.log(combinedArray);
+                }
+        </p>
+    </div>
+    <div class="part8">
+        <button onclick="myFunction8()">Задание 8</button>
+        <p>
+            function myFunction8() {
+                combinedArray.unshift(0);
+                console.log(combinedArray);
+                }
+        </p>
+    </div>
+    <div class="part9">
+        <button onclick="myFunction9()">Задание 9</button>
+        <p>
+            function myFunction9() {
+                let inputArray = prompt('введите массив значений через запятую:').split(',').map(Number);
+                let sqrtArray = inputArray.map(function(value) {
+                  if (isNaN(value) || value === '') {
+                    return 'некорректное значение';
+                  } else {
+                    return Math.sqrt(value);
+                  }
+                });
+                console.log(sqrtArray);
+                }
+        </p>
+    </div>
+    <div class="part92">
+        <button onclick="myFunction9_2()">Задание 9-2</button>
+        <p>
+            function myFunction9_2() {
+                let today = new Date();
+                console.log(today);
+                }
+        </p>
+    </div>
+    <div class="part10">
+        <button onclick="myFunction10()">Задание 10</button>
+        <p>
+            function myFunction10() {
+                let options = { year: 'numeric', month: 'long', day: 'numeric' };
+                console.log(today.toLocaleDateString("ru-RU", options));
+                }
+        </p>
+    </div>
+    <div>
+        <button onclick="myFunction11()">Задание 11</button>
+        <p>
+            function myFunction11() {
+                function randomProduct() {
+                    let num1 = Math.floor(Math.random() * 51);
+                    let num2 = Math.floor(Math.random() * 51);
+                    let product = num1 * num2;
+                    console.log(`произведение чисел ${num1} и ${num2} равно ${product}`);
+                  }
+                  
+                  randomProduct();
+                }
+        </p>
+    </div>
+    
+    
+    <script>
+        function myFunction1() {
+        let array1 = [1, 2, 3, 4, 5];
+        let array2 = new Array(1, 2, 3, 4, 5);
+        let array3 = Array.of(1, 2, 3, 4, 5);
+        }
+
+        function myFunction2() {
+        console.log(array1[4]); 
+        array1[4] = 10; 
+        console.log(array1); 
+        }
+
+        function myFunction3() {
+        let lengthElement = document.getElementById('lengthElement');
+        lengthElement.addEventListener('mouseover', function() {
+          console.log('длина массива array1: ' + array1.length);
+        });
+        }
+
+        function myFunction4() {
+        for (let i = 0; i < array1.length; i++) {
+            console.log(array1[i]);
+          }
+        }
+        
+          array1.forEach(function(element) {
+            console.log(element);
+          });
+        
+          function myFunction5() {
+        let array4 = [6, 7, 8, 9, 10];
+        let combinedArray = array1.concat(array4);
+        console.log(combinedArray);
+          }
+
+        function myFunction6() {
+        let lastElement = combinedArray.pop();
+        console.log('удаленный элемент: ' + lastElement);
+        console.log(combinedArray);
+        }
+
+        function myFunction7() {
+        lastElement = combinedArray.pop();
+        console.log('удаленный элемент: ' + lastElement);
+        console.log(combinedArray);
+        }
+
+        function myFunction8() {
+        combinedArray.unshift(0);
+        console.log(combinedArray);
+        }
+
+        function myFunction9() {
+        let inputArray = prompt('введите массив значений через запятую:').split(',').map(Number);
+        let sqrtArray = inputArray.map(function(value) {
+          if (isNaN(value) || value === '') {
+            return 'некорректное значение';
+          } else {
+            return Math.sqrt(value);
+          }
+        });
+        console.log(sqrtArray);
+        }
+
+        function myFunction9_2() {
+        let today = new Date();
+        console.log(today);
+        }
+
+        function myFunction10() {
+        let options = { year: 'numeric', month: 'long', day: 'numeric' };
+        console.log(today.toLocaleDateString("ru-RU", options));
+        }
+
+        function myFunction11() {
+        function randomProduct() {
+            let num1 = Math.floor(Math.random() * 51);
+            let num2 = Math.floor(Math.random() * 51);
+            let product = num1 * num2;
+            console.log(`произведение чисел ${num1} и ${num2} равно ${product}`);
+          }
+          
+          randomProduct();
+        }
+    </script>
